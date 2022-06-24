@@ -1,1 +1,9 @@
-<p>oh-g works!</p>
+<div class="ohg-w-100">
+  <div *ngIf="columnDefs?.length">
+    <div class="ohg-d-flex ohg-w-100" style="padding-top: 10px; padding-bottom: 10px; border-bottom: 1px solid #000000;">
+      <div [class]="(col.headerClasses ?? '')" *ngFor="let col of columnDefs" [style]="col | ohGGridHeaderStyles">
+        {{col.title}}
+      </div>
+    </div>
+  </div>
+</div>

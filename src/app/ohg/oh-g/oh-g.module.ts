@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { OhGComponent } from './oh-g.component';
+import {OhGGridStylePipesModule} from '../pipes/oh-g-grid-style-pipes/oh-g-grid-style-pipes.module';
 
 
 
@@ -11,8 +12,9 @@ import { OhGComponent } from './oh-g.component';
   exports: [
     OhGComponent
   ],
-  imports: [
-    CommonModule
-  ]
+    imports: [
+        CommonModule,
+        OhGGridStylePipesModule
+    ]
 })
 export class OhGModule { }
